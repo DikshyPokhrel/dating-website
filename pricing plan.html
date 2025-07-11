@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Plan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new.css" />
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header" id="topHeader">
+    <div class="left">
+      <span><i class="fas fa-phone"></i> +800-123-4567 6587</span>
+      <span class="divider">|</span>
+      <span><i class="fas fa-map-marker-alt"></i> Beverley, New York 224 USA</span>
+    </div>
+    <div class="right">
+      <span>Find us on :</span>
+      <i class="fab fa-facebook-messenger"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-twitter"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-vimeo-v"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-skype"></i>
+      <span class="divider">|</span>
+      <i class="fas fa-rss"></i>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.jfif" alt="TuruLav Logo" class="logo" />
+      <span class="logo-text">TuruLav</span>
+      <span class="tagline">Best for dating website</span>
+    </div>
+
+    <div class="desktop-nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Features</a>
+        <div class="dropdown-menu">
+          <a href="All members.html">All Members</a>
+          <a href="members profile.html">Member Profile</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="pricing plan.html">Pricing Plan</a>
+          <a href="404 page.html">404 Page</a>
+        </div>
+      </div>
+      <a href="community.html">Community</a>
+      <div class="dropdown">
+        <a href="#">Blog</a>
+        <div class="dropdown-menu">
+          <a href="blog.html">Blog</a>
+          <a href="blog single.html">Blog Single</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="mobile-icons">
+      <i class="fas fa-info-circle info-icon" onclick="toggleHeader()"></i>
+      <i class="fas fa-bars hamburger" onclick="toggleNav()"></i>
+    </div>
+
+    <div class="nav-right">
+  <a href="login.html">
+    <button>Log In</button>
+  </a>
+  <a href="signup.html">
+    <button>Sign Up</button>
+  </a>
+</div>
+  </nav>
+
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Features <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="All members.html">All Members</a>
+        <a href="members profile.html">Member Profile</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="pricing plan.html">Pricing Plan</a>
+        <a href="404 page.html">404 Page</a>
+      </div>
+    </div>
+    <a href="community.html">Community</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Blog <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="blog.html">Blog</a>
+        <a href="blog single.html">Blog Single</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
+<!-----------------------------Main-------->
+
+<section class="page-heading">
+  <h1>TuruLav Dating Pricing Plan</h1>
+  <p>Home - Pricing Plan</p>
+</section>
+
+<section class="pricing-section"> 
+  <div class="pricing-header">
+    <span>Membership Levels</span>
+    <h3>Choose Our Pricing Plan</h3>
+  </div>
+  <div class="pricing-cards">
+    
+    <div class="pricing-card">
+      <div class="card-top"></div>
+      <h4>Basic Package</h4>
+      <div class="price">$29.00</div>
+      <p>$29.00 Now And Then $90.00 Per Month.</p>
+      <ul>
+        <li>View members directory</li>
+        <li>View members profile</li>
+        <li>Access group directory</li>
+        <li>Access to groups</li>
+        <li class="inactive">View site activity</li>
+        <li class="inactive">Send Private messages</li>
+        <li class="inactive">Add media to your profile</li>
+      </ul>
+      <button>Purchase Now</button>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-top"></div>
+      <h4>Silver Package</h4>
+      <div class="price">$290.00</div>
+      <p>$290.00 Now And Then $390.00 Per Month</p>
+      <ul>
+        <li>View members directory</li>
+        <li>View members profile</li>
+        <li>Access group directory</li>
+        <li>Access to groups</li>
+        <li class="inactive">View site activity</li>
+        <li class="inactive">Send Private messages</li>
+        <li class="inactive">Add media to your profile</li>
+      </ul>
+      <button>Purchase Now</button>
+    </div>
+
+    <div class="pricing-card">
+      <div class="card-top"></div>
+      <h4>Gold Package</h4>
+      <div class="price">$390.00</div>
+      <p>$390.00 Now And Then $490.00 Per Month.</p>
+      <ul>
+        <li>View members directory</li>
+        <li>View members profile</li>
+        <li>Access group directory</li>
+        <li>Access to groups</li>
+        <li class="inactive">View site activity</li>
+        <li class="inactive">Send Private messages</li>
+        <li class="inactive">Add media to your profile</li>
+      </ul>
+      <button>Purchase Now</button>
+    </div>
+    
+  </div>
+</section>
+
+
+  <!---------------------------contact-------------->
+
+<div class="contact-wrapper">
+    <div class="contact-border">
+      <section class="contact-section">
+        <div class="contact-box">
+          <div class="contact-icon">📞</div>
+          <div class="contact-title">Phone Number</div>
+          <div>+88019 339 702 520</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📧</div>
+          <div class="contact-title">Email</div>
+          <div>admin@turulav.com</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📍</div>
+          <div class="contact-title">Address</div>
+          <div>30 North West New York 240</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<!---------------------------about----------------->
+<section class="about-section">
+  <div class="about-container">
+
+    <div class="about-column">
+      <h2>About TuruLav</h2>
+      <p>
+        Energistically coordinate highly efficient process partnerships before revolutionary growth strategie improvement viaing awesome
+      </p>
+      <img src="images/About.jfif" alt="Couple" class="about-image" />
+    </div>
+
+    <div class="news-column">
+      <h2>Our Recent News</h2>
+
+      <div class="news-item">
+        <img src="images/about1.jfif" alt="News 1" />
+        <div>
+          <h3>Enable Seamin Matera Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about2.jfif" alt="News 2" />
+        <div>
+          <h3>Enable Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about3.jfif" alt="News 3" />
+        <div>
+          <h3>Dynamca Network Outitive Catays For Plagiarize Mindshare After.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-column">
+      <h2>Our Newsletter Signup</h2>
+      <p>
+        By subscribing to our mailing list you will always be update with the latest news from us.
+      </p>
+      <input type="email" placeholder="Enter Your email *" />
+      <button>Send Massage ✈</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+    © 2022 <span class="pink">TuruLav</span> - Best For Dating React Template.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

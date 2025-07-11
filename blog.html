@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new.css" />
+
+</head>
+<body>
+  <!-- Top Header -->
+  <div class="top-header" id="topHeader">
+    <div class="left">
+      <span><i class="fas fa-phone"></i> +800-123-4567 6587</span>
+      <span class="divider">|</span>
+      <span><i class="fas fa-map-marker-alt"></i> Beverley, New York 224 USA</span>
+    </div>
+    <div class="right">
+      <span>Find us on :</span>
+      <i class="fab fa-facebook-messenger"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-twitter"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-vimeo-v"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-skype"></i>
+      <span class="divider">|</span>
+      <i class="fas fa-rss"></i>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.jfif" alt="TuruLav Logo" class="logo" />
+      <span class="logo-text">TuruLav</span>
+      <span class="tagline">Best for dating website</span>
+    </div>
+
+    <div class="desktop-nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Features</a>
+        <div class="dropdown-menu">
+          <a href="All members.html">All Members</a>
+          <a href="members profile.html">Member Profile</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="pricing plan.html">Pricing Plan</a>
+          <a href="404 page.html">404 Page</a>
+        </div>
+      </div>
+      <a href="community.html">Community</a>
+      <div class="dropdown">
+        <a href="#">Blog</a>
+        <div class="dropdown-menu">
+          <a href="blog.html">Blog</a>
+          <a href="blog single.html">Blog Single</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="mobile-icons">
+      <i class="fas fa-info-circle info-icon" onclick="toggleHeader()"></i>
+      <i class="fas fa-bars hamburger" onclick="toggleNav()"></i>
+    </div>
+
+    <div class="nav-right">
+  <a href="login.html">
+    <button>Log In</button>
+  </a>
+  <a href="signup.html">
+    <button>Sign Up</button>
+  </a>
+</div>
+  </nav>
+
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Features <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="All members.html">All Members</a>
+        <a href="members profile.html">Member Profile</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="pricing plan.html">Pricing Plan</a>
+        <a href="404 page.html">404 Page</a>
+      </div>
+    </div>
+    <a href="community.html">Community</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Blog <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="blog.html">Blog</a>
+        <a href="blog single.html">Blog Single</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+
+<!-----------------------------Main------->
+<section class="page-heading">
+  <h1>TuruLav Dating Blog</h1>
+  <p>Home - Blog</p>
+</section>
+
+<div class="blog-container">
+  <div class="blog-a">
+  <div class="blog-a-card">
+    <img src="images/stories 2.jfif" alt="Blog Main" class="blog-a-card__image">
+    <div class="blog-a-card__content">
+      <div class="blog-a-card__meta">
+        By Admin March 24, 2021
+      </div>
+      <h2 class="blog-a-card__title">
+        Uompe Qrear High Ecent Nche Without Some Prin Uomp Without Some Qreari
+      </h2>
+      <p class="blog-a-card__desc">
+        Rapidious qntgerate distributed supply chains throuh marke position bestin practices chain marke position bestin practicer iersetvel fashon and sound qources forth ieretafve fashion bestin practice iersetve and sound qources for.
+      </p>
+      <div class="blog-a-card__footer">
+        <a href="#" class="blog-a-card__readmore">Read More &rarr;</a>
+        <div class="blog-a-card__stats">
+          <span class="blog-a-card__stat blog-a-card__like">&#10084; 12 Like</span>
+          <span class="blog-a-card__stat">&#128172; 24Comments</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <br><br>
+
+  <div class="blog-a-card">
+  <div class="slider">
+    <div class="slides">
+      <img src="images/stories 1.jfif" class="slide active" alt="Slide 1">
+      <img src="images/stories 2.jfif" class="slide" alt="Slide 2">
+      <img src="images/stories 3.jfif" class="slide" alt="Slide 3">
+    </div>
+    <button class="slider-btn prev">&#10094;</button>
+    <button class="slider-btn next">&#10095;</button>
+  </div>
+
+  <div class="blog-a-card__content">
+    <div class="blog-a-card__meta">
+      By Admin March 24, 2021
+    </div>
+    <h2 class="blog-a-card__title">
+      Uompe Qrear High Ecent Nche Without Some Prin Uomp Without Some Qreari
+    </h2>
+    <p class="blog-a-card__desc">
+      Rapidious qntgerate distributed supply chains throuh marke position bestin practices chain marke position bestin practicer iersetvel fashon and sound qources forth ieretafve fashion bestin practice iersetve and sound qources for.
+    </p>
+    <div class="blog-a-card__footer">
+      <a href="#" class="blog-a-card__readmore">Read More &rarr;</a>
+      <div class="blog-a-card__stats">
+        <span class="blog-a-card__stat blog-a-card__like">&#10084; 12 Like</span>
+        <span class="blog-a-card__stat">&#128172; 24 Comments</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <br><br>
+
+  <div class="blog-a-card">
+    <iframe class="blog-a-card__image" width="100%" height="215" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    <div class="blog-a-card__content">
+      <div class="blog-a-card__meta">
+        By Admin March 24, 2021
+      </div>
+      <h2 class="blog-a-card__title">
+        Uompe Qrear High Ecent Nche Without Some Prin Uomp Without Some Qreari
+      </h2>
+      <p class="blog-a-card__desc">
+        Rapidious qntgerate distributed supply chains throuh marke position bestin practices chain marke position bestin practicer iersetvel fashon and sound qources forth ieretafve fashion bestin practice iersetve and sound qources for.
+      </p>
+      <div class="blog-a-card__footer">
+        <a href="#" class="blog-a-card__readmore">Read More &rarr;</a>
+        <div class="blog-a-card__stats">
+          <span class="blog-a-card__stat blog-a-card__like">&#10084; 12 Like</span>
+          <span class="blog-a-card__stat">&#128172; 24Comments</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="blog-a-card">
+    <div class="blog-a-card__quote">
+    <span class="blog-a-card__quote-icon">“</span>
+    <p class="blog-a-card__quote-text">
+      Rapidious qntegrate distributed supply chains throuih marke position bestn practces chain marke positonn bestin practcer ieractvel fashon and sound qources forin iteractve fashion bestin practce ieractve and sound qources for.
+    </p>
+  </div>
+  
+    <div class="blog-a-card__content">
+      <div class="blog-a-card__meta">
+        By Admin March 24, 2021
+      </div>
+      <h2 class="blog-a-card__title">
+        Uompe Qrear High Ecent Nche Without Some Prin Uomp Without Some Qreari
+      </h2>
+      <p class="blog-a-card__desc">
+        Rapidious qntgerate distributed supply chains throuh marke position bestin practices chain marke position bestin practicer iersetvel fashon and sound qources forth ieretafve fashion bestin practice iersetve and sound qources for.
+      </p>
+      <div class="blog-a-card__footer">
+        <a href="#" class="blog-a-card__readmore">Read More &rarr;</a>
+        <div class="blog-a-card__stats">
+          <span class="blog-a-card__stat blog-a-card__like">&#10084; 12 Like</span>
+          <span class="blog-a-card__stat">&#128172; 24Comments</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <a href="#">←</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">→</a>
+  </div>
+ </div>
+ 
+
+  <div class="sidebar">
+    <div class="filter-box">
+        <div class="filter-box">
+      <h1>Introducing <span class="highlight">TuruLav</span></h1>
+    <p>Serious Dating With <span class="highlight">TuruLav</span> Your Perfect Match is Just a Click Away.</p>
+
+    <form>
+      <div class="form-row">
+        <select required>
+          <option disabled selected>I am a:</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <select required>
+          <option disabled selected>Looking for:</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row age-row">
+        <select required>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+        </select>
+        <select required>
+          <option>18+</option>
+          <option>19+</option>
+          <option>20+</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <select required>
+          <option disabled selected>Choose a country</option>
+          <option>USA</option>
+          <option>France</option>
+          <option>Italy</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <select required>
+          <option disabled selected>Your interest:</option>
+          <option>Singing</option>
+          <option>Dancing</option>
+          <option>Running</option>
+        </select>
+      </div>
+
+      <button type="submit">Find Your Partner</button>
+    </form>
+  </div>
+    </div>
+
+ <div class="you-may-like">
+  <h4>You May Like</h4>
+  <div class="likes">
+    <span><img src="images/members men 1.jfif" /></span>
+    <span><img src="images/members men 2.jfif" /></span>
+    <span><img src="images/members women 1.jfif" /></span>
+    <span><img src="images/members women 2.jfif" /></span>
+    <span><img src="images/members men 3.jfif" /></span>
+    <span><img src="images/members women 3.jfif" /></span>
+    <span><img src="images/online men 1.jfif" /></span>
+    <span><img src="images/online women 1.jfif" /></span>
+  </div>
+</div>
+
+    <div class="join-group">
+  <h4>Join The Group</h4>
+  <div class="divider"></div>
+
+  <div class="group">
+    <p><strong>Active Group A1</strong><br>
+      Colabors atively fabcate best breed and apcations through visionary
+    </p>
+    <div class="group-members">
+      <img src="images/members men 1.jfif" />
+      <img src="images/members women 1.jfif" />
+      <img src="images/members men 2.jfif" />
+      <div class="group-count">12+</div>
+    </div>
+    <button>👥 View Group</button>
+  </div>
+
+  <div class="group">
+    <p><strong>Active Group A2</strong><br>
+      Colabors atively fabcate best breed and apcations through visionary
+    </p>
+    <div class="group-members">
+      <img src="images/members women 2.jfif" />
+      <img src="images/members men 3.jfif" />
+      <img src="images/members women 3.jfif" />
+      <img src="images/online men 1.jfif" />
+      <img src="images/online women 1.jfif" />
+      <div class="group-count">12+</div>
+    </div>
+    <button>👥 View Group</button>
+  </div>
+</div>
+
+  <!---------------------------contact-------------->
+
+<div class="contact-wrapper">
+    <div class="contact-border">
+      <section class="contact-section">
+        <div class="contact-box">
+          <div class="contact-icon">📞</div>
+          <div class="contact-title">Phone Number</div>
+          <div>+88019 339 702 520</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📧</div>
+          <div class="contact-title">Email</div>
+          <div>admin@turulav.com</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📍</div>
+          <div class="contact-title">Address</div>
+          <div>30 North West New York 240</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<!---------------------------about----------------->
+<section class="about-section">
+  <div class="about-container">
+
+    <div class="about-column">
+      <h2>About TuruLav</h2>
+      <p>
+        Energistically coordinate highly efficient process partnerships before revolutionary growth strategie improvement viaing awesome
+      </p>
+      <img src="images/About.jfif" alt="Couple" class="about-image" />
+    </div>
+
+    <div class="news-column">
+      <h2>Our Recent News</h2>
+
+      <div class="news-item">
+        <img src="images/about1.jfif" alt="News 1" />
+        <div>
+          <h3>Enable Seamin Matera Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about2.jfif" alt="News 2" />
+        <div>
+          <h3>Enable Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about3.jfif" alt="News 3" />
+        <div>
+          <h3>Dynamca Network Outitive Catays For Plagiarize Mindshare After.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-column">
+      <h2>Our Newsletter Signup</h2>
+      <p>
+        By subscribing to our mailing list you will always be update with the latest news from us.
+      </p>
+      <input type="email" placeholder="Enter Your email *" />
+      <button>Send Massage ✈</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+    © 2022 <span class="pink">TuruLav</span> - Best For Dating React Template.
+</footer>
+
+<script src="new.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

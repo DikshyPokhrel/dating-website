@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new.css" />
+  <style>
+    
+.community-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #3b006e;
+}
+
+.all-groups-btn {
+  background-color: #5B2A86;;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.all-groups-btn span {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.search-box button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.active-card.group-item.hidden {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .community-search {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px; 
+  }
+
+  .search-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header" id="topHeader">
+    <div class="left">
+      <span><i class="fas fa-phone"></i> +800-123-4567 6587</span>
+      <span class="divider">|</span>
+      <span><i class="fas fa-map-marker-alt"></i> Beverley, New York 224 USA</span>
+    </div>
+    <div class="right">
+      <span>Find us on :</span>
+      <i class="fab fa-facebook-messenger"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-twitter"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-vimeo-v"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-skype"></i>
+      <span class="divider">|</span>
+      <i class="fas fa-rss"></i>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.jfif" alt="TuruLav Logo" class="logo" />
+      <span class="logo-text">TuruLav</span>
+      <span class="tagline">Best for dating website</span>
+    </div>
+
+    <div class="desktop-nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Features</a>
+        <div class="dropdown-menu">
+          <a href="All members.html">All Members</a>
+          <a href="members profile.html">Member Profile</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="pricing plan.html">Pricing Plan</a>
+          <a href="404 page.html">404 Page</a>
+        </div>
+      </div>
+      <a href="community.html">Community</a>
+      <div class="dropdown">
+        <a href="#">Blog</a>
+        <div class="dropdown-menu">
+          <a href="blog.html">Blog</a>
+          <a href="blog single.html">Blog Single</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="mobile-icons">
+      <i class="fas fa-info-circle info-icon" onclick="toggleHeader()"></i>
+      <i class="fas fa-bars hamburger" onclick="toggleNav()"></i>
+    </div>
+
+    <div class="nav-right">
+  <a href="login.html">
+    <button>Log In</button>
+  </a>
+  <a href="signup.html">
+    <button>Sign Up</button>
+  </a>
+</div>
+  </nav>
+
+
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Features <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="All members.html">All Members</a>
+        <a href="members profile.html">Member Profile</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="pricing plan.html">Pricing Plan</a>
+        <a href="404 page.html">404 Page</a>
+      </div>
+    </div>
+    <a href="community.html">Community</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Blog <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="blog.html">Blog</a>
+        <a href="blog single.html">Blog Single</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+
+<!-----------------------------------main-------------->
+
+<section class="page-heading">
+  <h1>TuruLav Dating Community</h1>
+  <p>Home - Community</p>
+</section>
+
+<section class="community-search">
+  <button class="all-groups-btn">All Groups <span>36</span></button>
+  <div class="search-box">
+    <input type="text" placeholder="Search Group Name...">
+    <button>Search Now</button>
+  </div>
+</section>
+  <div class="active-grid">
+  <div class="active-card group-item">
+    <img src="images/Active A1.jfif" alt="Group A1" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A1</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">12+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A2.jfif" alt="Group A2" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A2</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">9+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A3.jfif" alt="Group A3" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A3</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">6+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A4.jfif" alt="Group A4" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A4</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A1.jfif" alt="Group A5" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A5</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">10+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="active-card group-item">
+    <img src="images/Active A2.jfif" alt="Group A6" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A6</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">8+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A3.jfif" alt="Group A7" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A7</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">10+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A4.jfif" alt="Group A8" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A8</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">7+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="active-card group-item">
+    <img src="images/Active A1.jfif" alt="Group A9" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A9</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">12+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A2.jfif" alt="Group A10" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A10</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <a class="active-view-btn">View Group</a>
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">9+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A11" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A11</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">8+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A12" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A12</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">9+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A1.jfif" alt="Group A13" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A13</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">7+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A2.jfif" alt="Group A14" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A14</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">10+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A15" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A15</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">6+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A16" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A16</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">9+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A1.jfif" alt="Group A17" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A17</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">12+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A2.jfif" alt="Group A18" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A18</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">5+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A19" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A19</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">8+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A20" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A20</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">9+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A1.jfif" alt="Group A21" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A21</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">7+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A2.jfif" alt="Group A22" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A22</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">10+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A23" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A23</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">6+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A24" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A24</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">9+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A1.jfif" alt="Group A25" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A25</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">7+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A2.jfif" alt="Group A26" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A26</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">11+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A27" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A27</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">6+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A28" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A28</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">9+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A1.jfif" alt="Group A29" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A29</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">8+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A2.jfif" alt="Group A30" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A30</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">7+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A31" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A31</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">10+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A32" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A32</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">11+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A1.jfif" alt="Group A33" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A33</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">7+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A2.jfif" alt="Group A34" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A34</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">6+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A3.jfif" alt="Group A35" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A35</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">8+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="active-card group-item">
+  <img src="images/Active A4.jfif" alt="Group A36" />
+  <div class="active-card-content">
+    <div>
+      <div class="active-card-title">Active Group A36</div>
+      <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+    </div>
+    <div class="active-bottom">
+      <a class="active-view-btn">View Group</a>
+      <div class="active-avatars">
+        <img src="images/a1" />
+        <img src="images/a2" />
+        <img src="images/a3" />
+        <span class="active-count-badge">9+</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="pagination">
+    <a href="#">←</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">→</a>
+  </div>
+</section>
+
+<!---------------------------contact-------------->
+
+<div class="contact-wrapper">
+    <div class="contact-border">
+      <section class="contact-section">
+        <div class="contact-box">
+          <div class="contact-icon">📞</div>
+          <div class="contact-title">Phone Number</div>
+          <div>+88019 339 702 520</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📧</div>
+          <div class="contact-title">Email</div>
+          <div>admin@turulav.com</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📍</div>
+          <div class="contact-title">Address</div>
+          <div>30 North West New York 240</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<!---------------------------about----------------->
+<section class="about-section">
+  <div class="about-container">
+
+    <div class="about-column">
+      <h2>About TuruLav</h2>
+      <p>
+        Energistically coordinate highly efficient process partnerships before revolutionary growth strategie improvement viaing awesome
+      </p>
+      <img src="images/About.jfif" alt="Couple" class="about-image" />
+    </div>
+
+    <div class="news-column">
+      <h2>Our Recent News</h2>
+
+      <div class="news-item">
+        <img src="images/about1.jfif" alt="News 1" />
+        <div>
+          <h3>Enable Seamin Matera Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about2.jfif" alt="News 2" />
+        <div>
+          <h3>Enable Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about3.jfif" alt="News 3" />
+        <div>
+          <h3>Dynamca Network Outitive Catays For Plagiarize Mindshare After.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-column">
+      <h2>Our Newsletter Signup</h2>
+      <p>
+        By subscribing to our mailing list you will always be update with the latest news from us.
+      </p>
+      <input type="email" placeholder="Enter Your email *" />
+      <button>Send Massage ✈</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+    © 2022 <span class="pink">TuruLav</span> - Best For Dating React Template.
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const groups = Array.from(document.querySelectorAll('.active-card.group-item'));
+  const searchInput = document.querySelector('.search-box input');
+  const searchBtn = document.querySelector('.search-box button');
+  const paginationContainer = document.querySelector('.pagination');
+
+  const groupsPerPage = 12;
+  let filteredGroups = [...groups]; 
+  let currentPage = 1;
+
+  function renderGroups() {
+    groups.forEach(g => g.classList.add('hidden')); 
+
+    const start = (currentPage - 1) * groupsPerPage;
+    const end = start + groupsPerPage;
+
+    filteredGroups.slice(start, end).forEach(g => g.classList.remove('hidden'));
+  }
+
+  function renderPagination() {
+    paginationContainer.innerHTML = '';
+
+    const totalPages = Math.ceil(filteredGroups.length / groupsPerPage);
+    if (totalPages <= 1) return; 
+
+    const prev = document.createElement('a');
+    prev.href = '#';
+    prev.textContent = '←';
+    prev.className = currentPage === 1 ? 'disabled' : '';
+    prev.addEventListener('click', e => {
+      e.preventDefault();
+      if (currentPage > 1) {
+        currentPage--;
+        update();
+      }
+    });
+    paginationContainer.appendChild(prev);
+
+    for (let i = 1; i <= totalPages; i++) {
+      const pageLink = document.createElement('a');
+      pageLink.href = '#';
+      pageLink.textContent = i;
+      if (i === currentPage) pageLink.classList.add('active');
+      pageLink.addEventListener('click', e => {
+        e.preventDefault();
+        currentPage = i;
+        update();
+      });
+      paginationContainer.appendChild(pageLink);
+    }
+
+    const next = document.createElement('a');
+    next.href = '#';
+    next.textContent = '→';
+    next.className = currentPage === totalPages ? 'disabled' : '';
+    next.addEventListener('click', e => {
+      e.preventDefault();
+      if (currentPage < totalPages) {
+        currentPage++;
+        update();
+      }
+    });
+    paginationContainer.appendChild(next);
+  }
+
+  function update() {
+    renderGroups();
+    renderPagination();
+  }
+
+  function filterGroups() {
+    const query = searchInput.value.trim().toLowerCase();
+    filteredGroups = groups.filter(g => {
+      const title = g.querySelector('.active-card-title').textContent.toLowerCase();
+      return title.includes(query);
+    });
+    currentPage = 1; 
+    update();
+  }
+
+  searchBtn.addEventListener('click', filterGroups);
+  searchInput.addEventListener('keyup', e => {
+    if (e.key === 'Enter') filterGroups();
+  });
+
+  update();
+});
+</script>
+</body>
+</html>

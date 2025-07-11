@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuruLav - Dating Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header" id="topHeader">
+    <div class="left">
+      <span><i class="fas fa-phone"></i> +800-123-4567 6587</span>
+      <span class="divider">|</span>
+      <span><i class="fas fa-map-marker-alt"></i> Beverley, New York 224 USA</span>
+    </div>
+    <div class="right">
+      <span>Find us on :</span>
+      <i class="fab fa-facebook-messenger"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-twitter"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-vimeo-v"></i>
+      <span class="divider">|</span>
+      <i class="fab fa-skype"></i>
+      <span class="divider">|</span>
+      <i class="fas fa-rss"></i>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="images/logo.jfif" alt="TuruLav Logo" class="logo" />
+      <span class="logo-text">TuruLav</span>
+      <span class="tagline">Best for dating website</span>
+    </div>
+
+    <div class="desktop-nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Features</a>
+        <div class="dropdown-menu">
+          <a href="All members.html">All Members</a>
+          <a href="members profile.html">Member Profile</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="pricing plan.html">Pricing Plan</a>
+          <a href="404 page.html">404 Page</a>
+        </div>
+      </div>
+      <a href="community.html">Community</a>
+      <div class="dropdown">
+        <a href="#">Blog</a>
+        <div class="dropdown-menu">
+          <a href="blog.html">Blog</a>
+          <a href="blog single.html">Blog Single</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="mobile-icons">
+      <i class="fas fa-info-circle info-icon" onclick="toggleHeader()"></i>
+      <i class="fas fa-bars hamburger" onclick="toggleNav()"></i>
+    </div>
+
+    <div class="nav-right">
+  <a href="login.html">
+    <button>Log In</button>
+  </a>
+  <a href="signup.html">
+    <button>Sign Up</button>
+  </a>
+</div>
+  </nav>
+
+  <div class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Features <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="All members.html">All Members</a>
+        <a href="members profile.html">Member Profile</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="pricing plan.html">Pricing Plan</a>
+        <a href="404 page.html">404 Page</a>
+      </div>
+    </div>
+    <a href="community.html">Community</a>
+    <div class="dropdown">
+      <button class="dropdown-toggle" onclick="toggleDropdown(this)">Blog <span>+</span></button>
+      <div class="dropdown-menu">
+        <a href="blog.html">Blog</a>
+        <a href="blog single.html">Blog Single</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!---------------main------------>
+<section class="main-container">
+  <div class="left-box">
+    <h1>Introducing <span class="highlight">TuruLav</span></h1>
+    <p>Serious Dating With <span class="highlight">TuruLav</span> Your Perfect Match is Just a Click Away.</p>
+
+    <form>
+      <div class="form-row">
+        <label>I am a :</label>
+        <select required>
+          <option disabled selected>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Looking for :</label>
+        <select required>
+          <option disabled selected>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row age-row">
+        <label>Age :</label>
+        <select required>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+        </select>
+        <select required>
+          <option>18+</option>
+          <option>19+</option>
+          <option>20+</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>City :</label>
+        <input type="text" placeholder="Your City Name.." required />
+      </div>
+
+      <button type="submit">Find Your Partner</button>
+
+      <div class="social-login">
+        <button class="google-btn"><i class="fab fa-google"></i> Continue with google</button>
+        <button class="social-btn fb"><i class="fab fa-facebook-f"></i></button>
+        <button class="social-btn tw"><i class="fab fa-twitter"></i></button>
+      </div>
+    </form>
+  </div>
+
+<div class="image-container">
+  <div class="bubble-container">
+    <img src="images/04.png" class="bubble-img" alt="Thought Bubble">
+    <img src="images/06.png" class="bubble-text" alt="Are You Waiting For Dating?">
+  </div>
+
+  <img src="images/main.png" alt="Couple Image" class="couple-img">
+  <img src="images/01.png" class="floating-icon icon1" alt="Icon 1">
+  <img src="images/02.png" class="floating-icon icon2" alt="Icon 2">
+  <img src="images/03.png" class="floating-icon icon3" alt="Icon 3">
+  <img src="images/05.png" class="floating-icon icon5" alt="Icon 5">
+  <img src="images/07.png" class="floating-icon icon7" alt="Icon 7">
+  <img src="images/08.png" class="floating-icon icon8" alt="Icon 8">
+</div>
+</section>
+
+
+<!------------------- Members Section Start ------------------------->
+<div class="new-members-container">
+  <h2 class="subheading">Meet New People Today!</h2>
+  <h1>New Members in London</h1>
+
+  <div class="members-container">
+    <div class="card">
+      <img src="images/members women 1.jfif" alt="Ananya Das">
+      <h3>Ananya Das</h3>
+      <p>Active 1 Day</p>
+    </div>
+    <div class="card">
+      <img src="images/members women 2.jfif" alt="Priya Kapoor">
+      <h3>Priya Kapoor</h3>
+      <p>Active 2 Day</p>
+    </div>
+    <div class="card">
+      <img src="images/members women 3.jfif" alt="Elena Morris">
+      <h3>Elena Morris</h3>
+      <p>Active 9 Day</p>
+    </div>
+    <div class="card">
+      <img src="images/members men 1.jfif" alt="Rayyan Zafar">
+      <h3>Rayyan Zafar</h3>
+      <p>Active 15 Day</p>
+    </div>
+    <div class="card">
+      <img src="images/members men 2.jfif" alt="Rohit Mehra">
+      <h3>Rohit Mehra</h3>
+      <p>Active 10 Day</p>
+    </div>
+    <div class="card">
+      <img src="images/members men 3.jfif" alt="Yusuf Ali">
+      <h3>Yusuf Ali</h3>
+      <p>Active 2 Day</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="cta-btn"><span class="icon">👥</span> Join Us For Free</button>
+    <button class="cta-btn"><span class="icon">▶</span> Our TV Commercial</button>
+  </div>
+</div>
+
+
+<!-- -------------------------It All Starts With Us Section ------------------------>
+<section class="starts-section">
+  <h1>It All Starts With A Date</h1>
+  <h3>About Our Turulav</h3>
+
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="corner-ribbon"></div>
+      <div class="stat-icon">💍</div>
+      <div class="divider"></div>
+      <div class="stat-number">29,991</div>
+      <div class="stat-label">Members in Total</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="corner-ribbon"></div>
+      <div class="stat-icon">⚧️</div>
+      <div class="divider"></div>
+      <div class="stat-number">29,000</div>
+      <div class="stat-label">Members Online</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="corner-ribbon"></div>
+      <div class="stat-icon">👨‍💼</div>
+      <div class="divider"></div>
+      <div class="stat-number">14,000</div>
+      <div class="stat-label">Men Online</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="corner-ribbon"></div>
+      <div class="stat-icon">👩‍🦰</div>
+      <div class="divider"></div>
+      <div class="stat-number">15,000</div>
+      <div class="stat-label">Women Online</div>
+    </div>
+  </div>
+</section>
+
+<!-----------------------how all it starts------->
+
+  <section class="steps-section">
+    <h3>How Does It Work?</h3>
+    <h2>You’re Just 3 Steps Away From A Great Date</h2>
+
+    <div class="steps-container">
+      <div class="step-box">
+        <div class="icon-circle">Step 1</div>
+        <img src="images/how1.png" alt="Create A Profile">
+        <h4>Create A Profile</h4>
+        <p>Continue scalable alters through robust and assertively conceptual standards compliant commerce after technics sound.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="icon-circle">Step 2</div>
+        <img src="images/how2.png" alt="Find Matches">
+        <h4>Find Matches</h4>
+        <p>Continue scalable alters through robust and assertively conceptual standards compliant commerce after technics sound.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="icon-circle">Step 3</div>
+        <img src="images/how3.png" alt="Start Dating">
+        <h4>Start Dating</h4>
+        <p>Continue scalable alters through robust and assertively conceptual standards compliant commerce after technics sound.</p>
+      </div>
+    </div>
+  </section>
+<!--------------------------stories-------------------------------->
+<section class="success-container">
+    <div class="success-header">
+        <h3>Love in Faith Success Stories</h3>
+        <h2>Sweet Stories From Our Lovers</h2>
+    </div>
+    <div class="success-card-row">
+        <div class="success-card">
+            <img src="images/stories 1.jfif" alt="Couple embracing outdoors" />
+            <div class="success-card-content">
+                <div class="success-card-title">Image Post Formate</div>
+                <div class="success-card-desc">
+                    Seamlessly evolve unique web-readiness with Collabors atively fabricate best of breed and apcations through
+                </div>
+                <a class="read-more" href="blog.html">Read More</a>
+            </div>
+        </div>
+        <div class="success-card">
+            <img src="images/stories 2.jfif" alt="Couple winter city" />
+            <div class="success-card-content">
+                <div class="success-card-title">Couple Of Month</div>
+                <div class="success-card-desc">
+                    Seamlessly evolve unique web-readiness with Collabors atively fabricate best of breed and apcations through
+                </div>
+                <a class="read-more" href="blog.html">Read More</a>
+            </div>
+        </div>
+        <div class="success-card">
+            <img src="images/stories 3.jfif" alt="Couple at market" />
+            <div class="success-card-content">
+                <div class="success-card-title">Media For Blog Article</div>
+                <div class="success-card-desc">
+                    Seamlessly evolve unique web-readiness with Collabors atively fabricate best of breed and apcations through
+                </div>
+                <a class="read-more" href="blog.html">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------------------online members------------------>
+
+<div class="online-container">
+    <div class="header">
+      <h2>Top Members</h2>
+      <h1>Turulav Members Online Now</h1>
+    </div>
+
+    <div class="filters">
+      <button class="show-all active" onclick="filterMembers('all')">Show all</button>
+      <button onclick="filterMembers('female')">new girl member</button>
+      <button onclick="filterMembers('male')">New Boy Member</button>
+    </div>
+
+    <div class="members-grid" id="membersGrid">
+      <div class="member-card" data-gender="female">
+        <img src="images/members women 1.jfif" alt="Ananya Das" />
+        <h3>Ananya Das</h3>
+        <p>Active 1 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/members women 2.jfif" alt="Priya Kapoor" />
+        <h3>Priya Kapoor</h3>
+        <p>Active 2 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/online men 2.jfif" alt="Rahul Kumar" />
+        <h3>Rahul Kumar</h3>
+        <p>Active 1 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/online women 1.jfif" alt="Sonal Singh" />
+        <h3>Sonal Singh</h3>
+        <p>Active 2 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/members women 3.jfif" alt="Elena Morris" />
+        <h3>Elena Morris</h3>
+        <p>Active 9 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/online men 3.jfif" alt="Amit Verma" />
+        <h3>Amit Verma</h3>
+        <p>Active 1 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/members men 1.jfif" alt="Rayyan Zafar" />
+        <h3>Rayyan Zafar</h3>
+        <p>Active 15 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/members men 2.jfif" alt="Rohit Mehra" />
+        <h3>Rohit Mehra</h3>
+        <p>Active 10 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/online women 2.jfif" alt="Ayesha Khan" />
+        <h3>Ayesha Khan</h3>
+        <p>Active 2 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/members men 3.jfif" alt="Yusuf Ali" />
+        <h3>Yusuf Ali</h3>
+        <p>Active 2 Day</p>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------recently active groups-------------------->
+
+<section class="active-container">
+  <h2 class="active-subheading">Recently Active Groups</h2>
+  <h1 class="active-heading">Turulav 4 Best Active Group</h1>
+
+  <div class="active-grid">
+    <div class="active-card group-item">
+    <img src="images/Active A1.jfif" alt="Group A1" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A1</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A2.jfif" alt="Group A2" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A2</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A3.jfif" alt="Group A3" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A3</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A4.jfif" alt="Group A4" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A4</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!--------------------what our customer say-------->
+
+<section class="feedback-section">
+    <p class="subheading">What our Customers Say</p>
+    <h1>Client’s Feedback – Latest Reviews From My Clients</h1>
+
+    <div class="map-container">
+
+      <div class="person person-1">
+        <div class="tooltip">
+          <p>Drama enabled worldwide action team with powerful collaboration tools.</p>
+          <p><strong>Umi Nishant</strong></p>
+          <p>Founder</p>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+        <img src="images/about1.jfif" alt="Umi Nishant" />
+      </div>
+
+      <div class="person person-2">
+        <img src="images/about2.jfif" alt="Amir Khan" />
+        <div class="tooltip">
+          <p>Fast and reliable support throughout!</p>
+          <p><strong>Amir Khan</strong></p>
+          <p>Designer</p>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+      </div>
+
+      <div class="person person-3">
+        <img src="images/about3.jfif" alt="Lina Park" />
+        <div class="tooltip">
+          <p>Creative solutions and a friendly approach!</p>
+          <p><strong>Lina Park</strong></p>
+          <p>Developer</p>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+      </div>
+
+      <div class="person person-4">
+        <div class="tooltip">
+          <p>Truly top-tier in every aspect!</p>
+          <p><strong>Ronit Das</strong></p>
+          <p>Marketer</p>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+        <img src="images/members men 1.jfif" alt="Ronit Das" />
+      </div>
+
+      <div class="person person-5">
+        <img src="images/members women 1.jfif" alt="Zinat Zata" />
+        <div class="tooltip">
+          <p>Loved the design process and output!</p>
+          <p><strong>Zinat Zata</strong></p>
+          <p>Student</p>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+      </div>
+
+      <div class="person person-6">
+        <img src="images/online women 2.jfif" alt="John Deo" />
+        <div class="tooltip">
+          <p>Professionalism and speed at its best.</p>
+          <p><strong>John Deo</strong></p>
+          <p>Entrepreneur</p>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!---------------------------Download------------->
+<section class="download-section">
+    <div class="download-left">
+      <h3>Download App Our Turulav</h3>
+      <h1>Easy Connect to Everyone</h1>
+      <p>
+        You found us, finally, and you are already in love. <br>
+        More than 5,000,000 around the world already shared the same experience <br>
+        and using area uses our system.<br>
+        Joining us today just got easier!
+      </p>
+      <div class="store-buttons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="App Store">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      </div>
+    </div>
+    <div class="download-right">
+      <img src="images/footer img.png" alt="mobile">
+    </div>
+  </section>
+
+<!---------------------------contact-------------->
+
+<div class="contact-wrapper">
+    <div class="contact-border">
+      <section class="contact-section">
+        <div class="contact-box">
+          <div class="contact-icon">📞</div>
+          <div class="contact-title">Phone Number</div>
+          <div>+88019 339 702 520</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📧</div>
+          <div class="contact-title">Email</div>
+          <div>admin@turulav.com</div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-icon">📍</div>
+          <div class="contact-title">Address</div>
+          <div>30 North West New York 240</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<!---------------------------about----------------->
+<section class="about-section">
+  <div class="about-container">
+
+    <div class="about-column">
+      <h2>About TuruLav</h2>
+      <p>
+        Energistically coordinate highly efficient process partnerships before revolutionary growth strategie improvement viaing awesome
+      </p>
+      <img src="images/About.jfif" alt="Couple" class="about-image" />
+    </div>
+
+    <div class="news-column">
+      <h2>Our Recent News</h2>
+
+      <div class="news-item">
+        <img src="images/about1.jfif" alt="News 1" />
+        <div>
+          <h3>Enable Seamin Matera Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about2.jfif" alt="News 2" />
+        <div>
+          <h3>Enable Forin And Our Orthonal Create Vortals.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="images/about3.jfif" alt="News 3" />
+        <div>
+          <h3>Dynamca Network Outitive Catays For Plagiarize Mindshare After.</h3>
+          <p class="date">July 23, 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-column">
+      <h2>Our Newsletter Signup</h2>
+      <p>
+        By subscribing to our mailing list you will always be update with the latest news from us.
+      </p>
+      <input type="email" placeholder="Enter Your email *" />
+      <button>Send Massage ✈</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+    © 2022 <span class="pink">TuruLav</span> - Best For Dating React Template.
+</footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

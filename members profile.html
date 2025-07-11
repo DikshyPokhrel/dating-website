@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TuruLav Dating Members Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+
+<!-- Top Header -->
+<div class="top-header" id="topHeader">
+  <div class="left">
+    <span><i class="fas fa-phone"></i> +800-123-4567 6587</span>
+    <span class="divider">|</span>
+    <span><i class="fas fa-map-marker-alt"></i> Beverley, New York 224 USA</span>
+  </div>
+  <div class="right">
+    <span>Find us on :</span>
+    <i class="fab fa-facebook-messenger"></i>
+    <span class="divider">|</span>
+    <i class="fab fa-twitter"></i>
+    <span class="divider">|</span>
+    <i class="fab fa-vimeo-v"></i>
+    <span class="divider">|</span>
+    <i class="fab fa-skype"></i>
+    <span class="divider">|</span>
+    <i class="fas fa-rss"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="images/logo.jfif" alt="TuruLav Logo" class="logo" />
+    <span class="logo-text">TuruLav</span>
+    <span class="tagline">Best for dating website</span>
+  </div>
+  <div class="desktop-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#">Features</a>
+      <div class="dropdown-menu">
+        <a href="All members.html">All Members</a>
+        <a href="members profile.html">Member Profile</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="pricing plan.html">Pricing Plan</a>
+        <a href="404 page.html">404 Page</a>
+      </div>
+    </div>
+    <a href="community.html">Community</a>
+    <div class="dropdown">
+      <a href="#">Blog</a>
+      <div class="dropdown-menu">
+        <a href="blog.html">Blog</a>
+        <a href="blog single.html">Blog Single</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="mobile-icons">
+    <i class="fas fa-info-circle info-icon" onclick="toggleHeader()"></i>
+    <i class="fas fa-bars hamburger" onclick="toggleNav()"></i>
+  </div>
+  <div class="nav-right">
+    <a href="login.html"><button>Log In</button></a>
+    <a href="signup.html"><button>Sign Up</button></a>
+  </div>
+</nav>
+
+<div class="nav-menu" id="navMenu">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropdown-toggle" onclick="toggleDropdown(this)">Features <span>+</span></button>
+    <div class="dropdown-menu">
+      <a href="All members.html">All Members</a>
+      <a href="members profile.html">Member Profile</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="pricing plan.html">Pricing Plan</a>
+      <a href="404 page.html">404 Page</a>
+    </div>
+  </div>
+  <a href="community.html">Community</a>
+  <div class="dropdown">
+    <button class="dropdown-toggle" onclick="toggleDropdown(this)">Blog <span>+</span></button>
+    <div class="dropdown-menu">
+      <a href="blog.html">Blog</a>
+      <a href="blog single.html">Blog Single</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-heading">
+  <h1>TuruLav Dating Profile Single</h1>
+  <p>Home - Profile Single</p>
+</section>
+
+<div class="blog-container">
+  <div class="profile-container">
+    <div class="cover-photo">
+      <label class="edit-cover">✎ Edit Cover<input type="file" accept="image/*"></label>
+    </div>
+    <div class="profile-info">
+      <div class="profile-pic-container">
+        <img src="images/pfp.jfif" class="profile-pic" alt="Profile">
+        <label class="edit-profile">✎<input type="file" accept="image/*"></label>
+      </div>
+      <div class="user-details">
+        <h2>William Smith</h2>
+        <p class="user-status">Active 02 Minutes Ago</p>
+        <div class="action-buttons">
+          <button>Add Friends</button>
+          <button>Public Message</button>
+          <button>Private Message</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-tabs">
+      <button class="tab-btn active" data-tab="activity">Activity</button>
+      <button class="tab-btn" data-tab="profile">Profile</button>
+      <button class="tab-btn" data-tab="friends">Friends</button>
+      <button class="tab-btn" data-tab="groups">Groups</button>
+      <button class="tab-btn" data-tab="photos">Photos</button>
+      <button class="tab-btn" data-tab="media">Media</button>
+      <div class="dropdown">
+        <button class="tab-btn">More</button>
+        <div class="dropdown-content">
+          <button class="tab-btn" data-tab="privacy">Privacy</button>
+          <button class="tab-btn" data-tab="block">Block</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="tab-section active" id="activity">
+        <div class="media-subtabs">
+          <button class="tab-btn active" data-activity="personal">Personal</button>
+          <button class="tab-btn" data-activity="mentions">Mentions</button>
+          <button class="tab-btn" data-activity="friends">Friends</button>
+          <button class="tab-btn" data-activity="groups">Groups</button>
+          <div class="dropdown">
+            <button class="tab-btn">Everything ▼</button>
+            <div class="dropdown-content">
+              <button class="tab-btn">Recent</button>
+              <button class="tab-btn">Relevant</button>
+              <button class="tab-btn">Popular</button>
+            </div>
+          </div>
+        </div>
+        <!---------add content here------------->
+        <div class="media-sub-section active" id="personal-activity">
+          <div class="container">
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+        </div>
+        </div>
+          
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <br><br>
+
+      <div class="post-images">
+        <img src="images/stories 3.jfif" alt="post1" />
+        <img src="images/stories 2.jfif" alt="post2" />
+      </div>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+
+    <button class="load-more">Load More Post 🔁</button>
+  </div>
+</div>
+
+        <div class="media-sub-section" id="mentions-activity">
+         <div class="container">
+
+    <div class="create-post">
+  <div class="user-bar">
+    <img src="images/online women 1.jfif" alt="User">
+    <div class="user-info">
+      <h4>William Smith</h4>
+      <div class="privacy-wrapper">
+  <button class="privacy-toggle">
+    <i class="fas fa-globe"></i> Public <i class="fas fa-caret-down"></i>
+  </button>
+  <ul class="privacy-menu">
+    <li data-value="public"><i class="fas fa-globe"></i> Public</li>
+    <li data-value="friends"><i class="fas fa-user-friends"></i> Friends</li>
+    <li data-value="private"><i class="fas fa-lock"></i> Private</li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+  <textarea placeholder="Whats on your mind, William?"></textarea>
+  <div class="post-options">
+    <div class="left-options">
+      <span><i class="fas fa-pen"></i> Text</span>
+      <span><i class="fas fa-camera"></i> Photo/Videos</span>
+      <span><i class="fas fa-paperclip"></i> Attach File</span>
+    </div>
+    <button class="post-btn">POST</button>
+  </div>
+</div>
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+        </div>
+        </div>
+          
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <br><br>
+
+      <div class="post-image">
+        <img src="images/stories 3.jfif" alt="post1" />
+      </div>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+        </div>
+        </div>
+          
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <br><br>
+
+      <div class="post-images">
+        <img src="images/stories 3.jfif" alt="post1" />
+        <img src="images/stories 2.jfif" alt="post2" />
+      </div>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+
+    <button class="load-more">Load More Post 🔁</button>
+  </div> 
+        </div>
+
+        <div class="media-sub-section" id="friends-activity">
+          <div class="container">
+
+    <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+        </div>
+        </div>
+          
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <br><br>
+
+      <div class="post-images">
+        <img src="images/stories 3.jfif" alt="post1" />
+        <img src="images/stories 2.jfif" alt="post2" />
+      </div>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+        <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+        <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+
+    <button class="load-more">Load More Post 🔁</button>
+  </div>
+        </div>
+
+        <div class="media-sub-section" id="groups-activity">  
+          <div class="post-card">
+      <div class="user-info">
+        <img src="images/online women 1.jfif" alt="Profile" />
+        <div>
+          <h4>William Smith</h4>
+          <p><i class="fas fa-globe"></i> Public • 6 Minutes Ago</p>
+        </div>
+      </div>
+
+      <p class="post-text">
+        Quickly deliver going forward methods into create empowerment before client-centered bandwidth. Credibly pontificate interoperable leadership skills and B2B data awesome. Continually whiteboard and B2B data awesome. Continually whiteboard.
+      </p>
+
+      <hr />
+
+      <div class="stats">
+        <p>Julia, Petrova and 306 like this</p>
+        <p>136 Comments</p>
+      </div>
+
+      <hr />
+
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>🔁 Share</button>
+      </div>
+    </div>
+
+
+    <button class="load-more">Load More Post 🔁</button>
+  </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="tab-section" id="profile">
+        <section class="profile-container">
+
+    <div class="profile-section">
+      <h3 class="profile-heading">Basic Info</h3>
+      <ul class="profile-list">
+        <li><strong>Name:</strong> William Smith</li>
+        <li><strong>I am:</strong> Woman</li>
+        <li><strong>Looking For a:</strong> Men</li>
+        <li><strong>Marital Status:</strong> Single</li>
+        <li><strong>Age:</strong> 36</li>
+        <li><strong>Date of Birth:</strong> 27-03-1988</li>
+        <li><strong>Address:</strong> Sleepy Hill Palace, Hyderabad, USA</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h3 class="profile-heading">Myself Summary</h3>
+      <p class="profile-paragraph">
+        Collaboratively innovate compelling infomediaries after prospective partnerships. Completely e-enable
+        backward-compatible interfaces for synergistic core competencies. Uniquely disseminate cross-media leadership
+        skills via e-business schemas. Interactively strategize market-driven portals via mission-critical core
+        competencies. Rapidiously synthesize front-end channels and multimedia based schemas. Enthusiastically drive
+        collaborative partnerships after leading-edge convergence methodologies and dramatically evolve effective
+        deliverables. Holistic effective e-services. Energistically envisioneer cost effective E-business before
+        front-end users.
+      </p>
+    </div>
+
+    <div class="profile-section">
+      <h3 class="profile-heading">Looking For</h3>
+      <ul class="profile-list">
+        <li><strong>Things I’m looking for:</strong> I want a funny person</li>
+        <li><strong>Whatever I like:</strong> I like to travel a lot</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h3 class="profile-heading">Lifestyle</h3>
+      <ul class="profile-list">
+        <li><strong>Interest:</strong> Dogs/Cats</li>
+        <li><strong>Favorite vacation spot:</strong> Maldives, Bangladesh</li>
+        <li><strong>Looking For:</strong> Serious Relationship/Marriage</li>
+        <li><strong>Smoking:</strong> Casual Smoker</li>
+        <li><strong>Language:</strong> English, French, Italian</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h3 class="profile-heading">Physical Info</h3>
+      <ul class="profile-list">
+        <li><strong>Height:</strong> 5 ft 11</li>
+        <li><strong>Weight:</strong> 72 kg</li>
+        <li><strong>Hair Color:</strong> Black</li>
+        <li><strong>Eye Color:</strong> Brown</li>
+        <li><strong>Body Type:</strong> Fit</li>
+        <li><strong>Ethnicity:</strong> Middle Eastern</li>
+      </ul>
+    </div>
+
+  </section>
+      </div>
+
+      <div class="tab-section" id="friends">
+       <div class="online-container">
+
+    <div class="members-grid" id="membersGrid">
+      <div class="member-card" data-gender="female">
+        <img src="images/members women 1.jfif" alt="Ananya Das" />
+        <h3>Ananya Das</h3>
+        <p>Active 1 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/members women 2.jfif" alt="Priya Kapoor" />
+        <h3>Priya Kapoor</h3>
+        <p>Active 2 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/online men 2.jfif" alt="Rahul Kumar" />
+        <h3>Rahul Kumar</h3>
+        <p>Active 1 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/online women 1.jfif" alt="Sonal Singh" />
+        <h3>Sonal Singh</h3>
+        <p>Active 2 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/members women 3.jfif" alt="Elena Morris" />
+        <h3>Elena Morris</h3>
+        <p>Active 9 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/online men 3.jfif" alt="Amit Verma" />
+        <h3>Amit Verma</h3>
+        <p>Active 1 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/members men 1.jfif" alt="Rayyan Zafar" />
+        <h3>Rayyan Zafar</h3>
+        <p>Active 15 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/members men 2.jfif" alt="Rohit Mehra" />
+        <h3>Rohit Mehra</h3>
+        <p>Active 10 Day</p>
+      </div>
+      <div class="member-card" data-gender="female">
+        <img src="images/online women 2.jfif" alt="Ayesha Khan" />
+        <h3>Ayesha Khan</h3>
+        <p>Active 2 Day</p>
+      </div>
+      <div class="member-card" data-gender="male">
+        <img src="images/members men 3.jfif" alt="Yusuf Ali" />
+        <h3>Yusuf Ali</h3>
+        <p>Active 2 Day</p>
+      </div>
+    </div>
+  </div> 
+      </div>
+      <div class="tab-section" id="groups">
+        <section class="active-container">
+
+  <div class="active-grid">
+    <div class="active-card group-item">
+    <img src="images/Active A1.jfif" alt="Group A1" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A1</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A2.jfif" alt="Group A2" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A2</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A3.jfif" alt="Group A3" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A3</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="active-card group-item">
+    <img src="images/Active A4.jfif" alt="Group A4" />
+    <div class="active-card-content">
+      <div>
+        <div class="active-card-title">Active Group A4</div>
+        <div class="active-card-desc">Collaboration actively facilitates best brand and operations through visionary value.</div>
+      </div>
+      <div class="active-bottom">
+        <div class="active-avatars">
+          <img src="images/a1" />
+          <img src="images/a2" />
+          <img src="images/a3" />
+          <span class="active-count-badge">11+</span>
+        </div>
+        <a class="active-view-btn">View Group</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+      </div>
+      <div class="tab-section" id="photos">
+        <section class="gallery-section">
+    <h2 class="gallery-title">All Uploaded Pictures</h2>
+    <div class="gallery-grid">
+      <img src="images/Random1" alt="1">
+      <img src="images/online women 1.jfif" alt="2">
+      <img src="images/Active A3.jfif" alt="3">
+      <img src="images/members men 1.jfif" alt="4">
+      <img src="images/Random3.jfif" alt="5">
+      <img src="images/online men 1.jfif" alt="6">
+      <img src="images/Random2.jfif" alt="7">
+      <img src="images/Random6.jfif" alt="8">
+      <img src="images/Active A1.jfif" alt="9">
+      <img src="images/online women 3.jfif" alt="10">
+      <img src="images/Random5.jfif" alt="11">
+      <img src="images/stories 3.jfif" alt="12">
+      <img src="images/Random4.jfif" alt="13">
+      <img src="images/blog single.jfif" alt="14">
+      <img src="images/stories 1.jfif" alt="15">
+      <img src="images/Random4.jfif" alt="16">
+
+    </div>
+
+    <div class="load-more-container">
+    <button class="load-more">Load More Post 🔁</button>
+    </div>
+      </div>
+      <div class="tab-section" id="media">
+  <div class="media-subtabs">
+    <button class="tab-btn active" data-subtab="all-media">All Media</button>
+    <button class="tab-btn" data-subtab="albums">Albums</button>
+    <button class="tab-btn" data-subtab="media-photos">Photos</button>
+    <button class="tab-btn" data-subtab="videos">Videos</button>
+    <button class="tab-btn" data-subtab="music">Music</button>
+  </div>
+
+  <div class="media-sub-section active" id="all-media">
+    <button class="upload-btn">+ Upload</button>
+    <div class="gallery">
+      <img src="images/Random1" alt="1">
+      <img src="images/online women 1.jfif" alt="2">
+      <img src="images/Active A3.jfif" alt="3">
+      <img src="images/members men 1.jfif" alt="4">
+      <img src="images/Random3.jfif" alt="5">
+      <img src="images/online men 1.jfif" alt="6">
+      <img src="images/Random2.jfif" alt="7">
+      <img src="images/Random6.jfif" alt="8">
+
+    </div>
+    <button class="load-more">Load More</button>
+  </div>
+
+  <div class="media-sub-section" id="albums">
+    <button class="upload-btn">+ Upload</button>
+    <div class="gallery">
+      <img src="images/Random1" alt="1">
+      <img src="images/online women 1.jfif" alt="2">
+      <img src="images/Active A3.jfif" alt="3">
+      <img src="images/members men 1.jfif" alt="4">
+      <img src="images/Random3.jfif" alt="5">
+      <img src="images/online men 1.jfif" alt="6">
+      <img src="images/Random2.jfif" alt="7">
+      <img src="images/Random6.jfif" alt="8">
+
+    </div>
+    <button class="load-more">Load More</button>
+  </div>
+
+  <div class="media-sub-section" id="media-photos">
+    <button class="upload-btn">+ Upload</button>
+    <div class="gallery">
+      <img src="images/Random1" alt="1">
+      <img src="images/online women 1.jfif" alt="2">
+      <img src="images/Active A3.jfif" alt="3">
+      <img src="images/members men 1.jfif" alt="4">
+    </div>
+    <button class="load-more">Load More</button>
+  </div>
+
+  <div class="media-sub-section" id="videos">
+    <button class="upload-btn">+ Upload</button>
+    <p>Sorry !! There's no media found for the request !!</p>
+    <button class="load-more">Load More</button>
+  </div>
+
+  <div class="media-sub-section" id="music">
+    <button class="upload-btn">+ Upload</button>
+    <p>Sorry !! There's no media found for the request !!</p>
+    <button class="load-more">Load More</button>
+  </div>
+</div>
+
+      <div class="tab-section" id="privacy"><p>Privacy Settings</p></div>
+      <div class="tab-section" id="block"><p>Blocked Users</p></div>
+
+      <div class="sidebar">
+        <div class="filter-box">
+          <h1>Introducing <span class="highlight">TuruLav</span></h1>
+          <p>Serious Dating With <span class="highlight">TuruLav</span> Your Perfect Match is Just a Click Away.</p>
+          <form>
+            <div class="form-row">
+              <select required>
+                <option disabled selected>I am a:</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <select required>
+                <option disabled selected>Looking for:</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row age-row">
+              <select required>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+              </select>
+              <select required>
+                <option>18+</option>
+                <option>19+</option>
+                <option>20+</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <select required>
+                <option disabled selected>Choose a country</option>
+                <option>USA</option>
+                <option>France</option>
+                <option>Italy</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <select required>
+                <option disabled selected>Your interest:</option>
+                <option>Singing</option>
+                <option>Dancing</option>
+                <option>Running</option>
+              </select>
+            </div>
+            <button type="submit">Find Your Partner</button>
+          </form>
+        </div>
+
+ <div class="you-may-like">
+  <h4>You May Like</h4>
+  <div class="likes">
+    <span><img src="images/members men 1.jfif" /></span>
+    <span><img src="images/members men 2.jfif" /></span>
+    <span><img src="images/members women 1.jfif" /></span>
+    <span><img src="images/members women 2.jfif" /></span>
+    <span><img src="images/members men 3.jfif" /></span>
+    <span><img src="images/members women 3.jfif" /></span>
+    <span><img src="images/online men 1.jfif" /></span>
+    <span><img src="images/online women 1.jfif" /></span>
+  </div>
+</div>
+
+    <div class="join-group">
+  <h4>Join The Group</h4>
+  <div class="divider"></div>
+
+  <div class="group">
+    <p><strong>Active Group A1</strong><br>
+      Colabors atively fabcate best breed and apcations through visionary
+    </p>
+    <div class="group-members">
+      <img src="images/members men 1.jfif" />
+      <img src="images/members women 1.jfif" />
+      <img src="images/members men 2.jfif" />
+      <div class="group-count">12+</div>
+    </div>
+    <button>👥 View Group</button>
+  </div>
+
+  <div class="group">
+    <p><strong>Active Group A2</strong><br>
+      Colabors atively fabcate best breed and apcations through visionary
+    </p>
+    <div class="group-members">
+      <img src="images/members women 2.jfif" />
+      <img src="images/members men 3.jfif" />
+      <img src="images/members women 3.jfif" />
+      <img src="images/online men 1.jfif" />
+      <img src="images/online women 1.jfif" />
+      <div class="group-count">12+</div>
+    </div>
+    <button>👥 View Group</button>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact-wrapper">
+  <div class="contact-border">
+    <section class="contact-section">
+      <div class="contact-box">
+        <div class="contact-icon">📞</div>
+        <div class="contact-title">Phone Number</div>
+        <div>+88019 339 702 520</div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-icon">📧</div>
+        <div class="contact-title">Email</div>
+        <div>admin@turulav.com</div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-icon">📍</div>
+        <div class="contact-title">Address</div>
+        <div>30 North West New York 240</div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-column">
+      <h2>About TuruLav</h2>
+      <p>Energistically coordinate highly efficient process partnerships before revolutionary growth strategie improvement viaing awesome</p>
+      <img src="images/About.jfif" alt="Couple" class="about-image" />
+    </div>
+    <div class="news-column">
+      <h2>Our Recent News</h2>
+      <div class="news-item">
+        <img src="images/about1.jfif" alt="News 1" />
+        <div><h3>Enable Seamin Matera Forin And Our Orthonal Create Vortals.</h3><p class="date">July 23, 2021</p></div>
+      </div>
+      <div class="news-item">
+        <img src="images/about2.jfif" alt="News 2" />
+        <div><h3>Enable Forin And Our Orthonal Create Vortals.</h3><p class="date">July 23, 2021</p></div>
+      </div>
+      <div class="news-item">
+        <img src="images/about3.jfif" alt="News 3" />
+        <div><h3>Dynamca Network Outitive Catays For Plagiarize Mindshare After.</h3><p class="date">July 23, 2021</p></div>
+      </div>
+    </div>
+    <div class="newsletter-column">
+      <h2>Our Newsletter Signup</h2>
+      <p>By subscribing to our mailing list you will always be update with the latest news from us.</p>
+      <input type="email" placeholder="Enter Your email *" />
+      <button>Send Massage ✈</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2022 <span class="pink">TuruLav</span> - Best For Dating React Template.
+</footer>
+
+
+<script src="script.js"></script>
+<script>
+  const tabButtons = document.querySelectorAll(".tab-btn[data-tab]");
+  const tabSections = document.querySelectorAll(".tab-section");
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const tab = btn.getAttribute("data-tab");
+      tabButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      tabSections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(tab).classList.add("active");
+    });
+  });
+
+  const subTabBtns = document.querySelectorAll(".media-subtabs .tab-btn[data-subtab]");
+  const subSections = document.querySelectorAll(".tab-section .media-sub-section");
+  subTabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const subId = btn.getAttribute("data-subtab");
+      subTabBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      subSections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(subId).classList.add("active");
+    });
+  });
+
+  const activityTabs = document.querySelectorAll('[data-activity]');
+  const activitySections = ['personal', 'mentions', 'friends', 'groups'];
+  activityTabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activityTabs.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const id = btn.getAttribute('data-activity');
+      activitySections.forEach(sec => {
+        document.getElementById(sec + '-activity').classList.remove('active');
+      });
+      document.getElementById(id + '-activity').classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
